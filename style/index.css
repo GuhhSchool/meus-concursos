@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    width: 1;
+    height: 95vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-direction: column;
+
+    font-family: 'Quicksand', sans-serif;
+    background-color: #141a2a;
+}
+
+#section--links {
+    display: flex;
+    position: relative;
+    width: 50%;
+    margin: 40px;
+    margin-bottom: 10px;
+    
+    flex-direction: column;
+    align-items: center;
+    
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+.draw {
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    size: 2px;
+
+    border: solid 2px rgb(255, 255, 255);
+    
+}
+
+#span--desenho_1 {
+    border-right: 0;
+    border-bottom: 0;
+    left: 0;
+}
+
+#span--desenho_2 {
+    border-left: 0;
+    border-bottom: 0;
+    right: 0;
+}
+
+#span--desenho_3 {
+    border-right: 0;
+    border-top: 0;
+    left: 0;
+    bottom: 0;
+}
+
+#span--desenho_4 {
+    border-left: 0;
+    border-top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.div--title {
+    font-size: 24px;
+    padding: 2em 1em;
+}
+
+.h1--title {
+    text-align: center;
+}
+
+.div--button {
+    margin: 20px;
+    position: relative;
+    padding: 1em 2em;
+    font-size: 24px;
+    font-family: 'Kanit', sans-serif;
+
+    border: solid rgb(83, 255, 241) 2px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: black;
+}
+
+.a--button {
+    text-decoration: none;
+}
+
+.div--button::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -2px;
+    left: -2px;
+
+    border-radius: 20px;
+    border: solid rgb(114, 83, 255) 2px;
+
+    transition: transform 0.5s;
+}
+
+.div--button:hover::after {
+    transform: translate(10px, -10px);
+}
+
+.img--medal {
+    width: 60px;
+    position: absolute;
+    top: 0;
+    right: -1vw;
+    transform: rotate(-25deg);
+}
+
+.div--area_1 {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.div--area_1::before {
+    content: 'Tema: Sustentabilidade Ambiental';
+    position: absolute;
+    bottom: -10px;
+    font-size: 18px;
+    opacity: 0;
+    color: rgb(0, 0, 0);
+
+    transition: opacity 0.25s, transform 0.5s;
+}
+
+.div--area_1:hover::before {
+    transform: translateY(15px);
+    opacity: 1;
+}
+
+.div--area_2 {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.div--area_2::before {
+    content: 'Tema: Ações que Transformam o Mundo';
+    position: absolute;
+    bottom: -10px;
+    font-size: 18px;
+    opacity: 0;
+    color: rgb(0, 0, 0);
+
+    transition: opacity 0.25s, transform 0.5s;
+}
+
+.div--area_2:hover::before {
+    transform: translateY(15px);
+    opacity: 1;
+}
+
+.div--area_3 {
+    background: rgba(255, 255, 255, 0.5);
+    border: solid rgb(255, 33, 25) 2px;
+}
+
+#p--marca {
+    width: 50%;
+    font-size: 20px;
+    text-align: center;
+    margin: 0 40px;
+    font-style: italic;
+
+    color: rgb(0, 0, 0);
+    font-family: 'Kanit', sans-serif;
+
+}
